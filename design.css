@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'Burbank Big Cd Bk';
+    src: url('./Fonts/BurbankBigCondensed-Bold.eot');
+    src: url('./Fonts/BurbankBigCondensed-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./Fonts/BurbankBigCondensed-Bold.woff2') format('woff2'),
+        url('./Fonts/BurbankBigCondensed-Bold.woff') format('woff'),
+        url('./Fonts/BurbankBigCondensed-Bold.ttf') format('truetype'),
+        url('./Fonts/BurbankBigCondensed-Bold.svg#BurbankBigCondensed-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+* {
+    font-family: Arial, sans-serif;
+}
+html {
+    background-color: #2f2f2f;
+    height: 100%;
+    width: 100%;
+}
+
+.game {
+    align-items: center;
+}
+#canvas {
+    margin-top: 2%;
+}
+.text, .headline {
+    color: #fff;
+}
+.headline {
+    font-family: 'Burbank Big Cd Bk';
+}
+.game_button_active, .game_button_inactive {
+    font-family: 'Burbank Big Cd Bk';
+    color: #2c3067;
+    font-size: 15px;
+    border: 3px #fefc72 solid;
+    border-radius: 0px;
+    padding: 5px 15px;
+    text-shadow: 1px 1px 1px #528ecc;
+    box-shadow: 1px 1px 2px 0px #bbdaf7;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+}
+.game_button_active {
+    background-color: #eee602;
+}
+.game_button_inactive {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(0, 0, 0, 0);
+    border: none;
+    text-shadow: none;
+    cursor: default;
+    box-shadow: none;
+}
+.game_button_active:hover {
+    transform:  scale(1.1);
+    box-shadow: 0px 4px 15px 0px rgba(17, 17, 17, 0.8);
+    transition: all 0.2s ease-in-out;
+}
+.game_button_active:active {
+    position: relative;
+    top: 1px;
+}
+.grid_control, .control {
+    width: 50%;
+    overflow: hidden;
+
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.left, .right {
+    border: 3px #7c7c74 solid;
+    border-radius: 0px;
+}

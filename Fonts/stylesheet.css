@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Burbank Big Cd Bd';
+    src: url('BurbankBigCondensed-Bold.eot');
+    src: url('BurbankBigCondensed-Bold.eot?#iefix') format('embedded-opentype'),
+        url('BurbankBigCondensed-Bold.woff2') format('woff2'),
+        url('BurbankBigCondensed-Bold.woff') format('woff'),
+        url('BurbankBigCondensed-Bold.ttf') format('truetype'),
+        url('BurbankBigCondensed-Bold.svg#BurbankBigCondensed-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

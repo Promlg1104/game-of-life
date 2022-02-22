@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+        <title>Game Of Life</title>
+        <link rel="stylesheet" type="text/css" href="design.css">
+    </head>
+    <body>
+        <div class="game">
+            <h1 class="headline">Game of Life</h1>
+            <div class="grid_control">
+                <div class="control left">
+                    <input id="height" type="number" title="Height"><a class="text">-> Höhe</a><br>
+                    <input id="width" type="number" title="Width"><a class="text">-> Breite</a><br>
+                    <input id="grid_size" type="number" title="Grid Size"><a class="text">-> Zellen Größe</a><br>
+                </div>
+                <div class="left">
+                    <a class="text">
+                        Lere Felder werden automatisch auf die Standart Größen gesetzt.
+                    <br>Standart Größen Sind:
+                    <br>Höhe & Breite: 600
+                    <br>Zellen Größe: 10
+                    <br>Die Zellen Anzahl basiert auf die Größe des Feldes und der Zellen Größe.
+                    <br>Höhe / Zellen Größe = Anzahl Zellen pro Zeile
+                    <br>Breite / Zellen Größe = Anzahl Zellen pro Spalte
+                </a><br>
+                </div>
+            </div>
+            <div class="game_control">
+                <br>
+                <button class="game_button_active" onclick="generate()">Generieren / Leeren</button>
+                <button class="game_button_active" onclick="grid.randomize()">Zufällig</button>
+                <button class="game_button_active" id="togglePlay" onclick="togglePlay()">Play</button>
+                <button class="game_button_active" onclick="nextGen()" id="nextGenBtn">Nächste Generation</button><br><br>
+                <a class="docsURL text">Custom JSON: </a>
+                <a class="text url" href="https://servermf.de/GameOfLife/docs/CustomJSON.html">What is this?</a><br>
+                <input id="json" type="text" title="Custom Json">
+                <button class="game_button_active" onclick="jsonLoad()">Load</button><br>
+                <a class="text" id="genCount">Generation: 0</a>
+            </div>
+        </div>
+        <script src="p5.js"></script>
+        <script src="jquery.min.js"></script>
+        <script src="game.js"></script>
+    </body>
+</html>
